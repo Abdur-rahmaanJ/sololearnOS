@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- miss codepen --> 
+<!--
+        WELCOME TO SOLOLEARN OS v1.0.0
+    about | features | app dev guide | submit app
+    
+    LICENSE : MIT with attribution clearly shown 
+    
+    (ABOUT)
+    SOLOLEARN OS is an advanced os (recreation) software.
+    It was a side project going on for days.
+    
+    It uses some tricks to get things done. Browse the source
+    Feel free to propose features
+    More goodies coming
+    Feel free to ask questions
+    
+    (FEATURES)
+    - ...
+    - working apps
+    - app category
+    - custom app install
+    - customisation options
+    
+    (APP DEV GUIDE)
+        _namespacing_
+            you are advised to name your functions and classes by appending an initial
+            e.g. my awesome app
+            mawa_func(){}
+            .mawa_style{}
+            
+        _content_
+            same rule as sl. no nsfw.
+            
+    (SUBMIT APPS)
+    leave a comment with sololearn link and icon link
+            
+            
+-->
+<html>
+    <head>
+        <title>Page Title</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="os_style.css">
+        
+        <script src="os_script.js"></script>
+        <script src="//static.miniclipcdn.com/js/game-embed.js"></script>
+    </head>
+    <body>
+        <div id='status-bar' class=" animated bounceInRight">
+            <div class="s-i-r f ">
+                <p class="f " id='s-add-app'><i class=" fa fa-download"></i></p>
+                <p class="f " id='s-settings'><i class=" fa fa-gear"></i></p>
+                <p class="f " style="background-color:gray"><i class=" fa fa-wifi"></i></p>
+                <p class="f " style="background-color:gray"><i class=" fa fa-volume-up"></i></p>
+                <p class="f " style="background-color:gray"><i class=" fa fa-plug"></i></p>
+                <p class="f " style="background-color:gray"><i class=" fa fa-clock-o"></i></p>
+            </div>
+        </div>
+        
+        <div id="app-display" class="c">
+            <div id="buts" class="f">
+                <div id="see-all" class="b f foc">
+                    all
+                </div>
+                <div id="see-edu" class="b f">
+                    <i class=" fa fa-leanpub"></i>
+                </div>
+                <div id="see-util" class="b f">
+                    <i class=" fa fa-wrench"></i>
+                </div>
+                <div id="see-game" class="b f">
+                    <i class=" fa fa-gamepad"></i>
+                </div>
+                <div id="see-chat" class="b f">
+                    <i class=" fa fa-comments-o"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div id='apps'>
+            
+        </div>
+        
+        <div id='app-holder'>
+            <div class='app-bar'>
+                <div id="app-now-icon" class="f"><img id="app-now-img" src=""></div>
+                <div id='app-now-title' class="app-title f"></div>
+                <div class='app-close f'>x</div>
+            </div>
+            <div id='app-load'>
+                
+            </div>
+        </div>
+        
+        <div id='app-add' class="overlay">
+            <div class='app-bar'>
+                <div class="app-title f">install app</div>
+                <div class='app-close f'>x</div>
+            </div>
+            <div class="overlay-content">
+                <div id="app-add-content">
+                    <p>app name</p>
+                    <input id='install-name'>
+                    <p>app logo url</p>
+                    <input id='install-logo' placeholder='leave blank for random pic'>
+                    <p>app author</p>
+                    <input id='install-author'>
+                    <p>sl link</p>
+                    <input id='install-link'>
+                    <p>category</p>
+                    <select id="install-category">
+                      <option value="edu">education</option>
+                      <option value="util">utility</option>
+                      <option value="chat">chat</option>
+                      <option value="game">game</option>
+                    </select>
+                    <p>app descrip</p>
+                    <textarea id="install-descrip"></textarea>
+                    <p>app code</p>
+                    <textarea id="install-code"></textarea>
+                    <p>app style</p>
+                    <textarea id="install-style"></textarea>
+                    <p>app script</p>
+                    <textarea id="install-script"></textarea>
+                    <p></p><button id="install-app">test-install</button>
+                    <div id="set-dummy">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='ccc'>
+            
+        </div>
+        <div id="settings" class="overlay">
+            <div class='app-bar'>
+                <div class="app-title f">settings</div>
+                <div class='app-close f'>x</div>
+            </div>
+            <div id="settings-contents" class="overlay-content">
+                <div id="os-settings">
+                    <p>change background color</p>
+                    <div id="os-bg">
+                        <div style="background-color:orange" id="os-bg-1" class="os-bg f"></div>
+                        <div style="background-color:#C36969" id="os-bg-2" class="os-bg f"></div>
+                        <div style="background-color:#C39669" id="os-bg-3" class="os-bg f"></div>
+                        <div style="background-color:#A57FCC" id="os-bg-4" class="os-bg f"></div>
+                        <div style="background-color:#41A472" id="os-bg-5" class="os-bg f"></div>
+                        <div style="background-color:white" id="os-bg-5" class="os-bg f"></div>
+                        <div style="background-color:black" id="os-bg-5" class="os-bg f"></div>
+                    </div>
+                    <p>change background image</p>
+                    <div id="os-img">
+                        <img src="https://www.myfreewallpapers.net/nature/wallpapers/placid-river-02.jpg" class="os-img">
+                        <img src="https://i.pinimg.com/736x/4e/f0/9c/4ef09c38d029e274f887e040a41bc0df--colorful-backgrounds-wallpapers.jpg" class="os-img">
+                        <img src="https://www.imgbase.info/images/safe-wallpapers/digital_art/2d/46985_2d_red_simple_color_landscape.jpg" class="os-img">
+                        <img src="https://www.desktopbackground.org/t/2014/06/15/778676_city-green-2d-wallpapers_1600x925_h.jpg" class="os-img">
+                        <img src="http://icloudpicture.com/wp-content/uploads/2015/12/Dark-2D-Wallpaper.jpeg" class="os-img">
+                        <img src="https://i.pinimg.com/736x/0a/58/4b/0a584b8a68560bb617b95180f0e38c70.jpg" class="os-img">
+                        <img src="http://www.gsfdcy.com/data/img/67/1914469-polygon-wallpaper.jpg" class="os-img">
+                        <img src="http://www.setaswall.com/wp-content/uploads/2017/04/Polygon-Wallpaper-20-1920x1080.jpg" class="os-img">
+                        <img src="https://i.imgur.com/vOrD96J.jpg" class="os-img">
+                        <img src="https://i.pinimg.com/originals/ef/eb/e3/efebe341050b1ee4f07112b5cb89605f.jpg" class="os-img">
+                        <img src="https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/07/Icy-Polygons.jpg" class="os-img">
+                        <img src="http://www.androidguys.com/wp-content/uploads/2014/12/c2i_2011201418191.png" class="os-img">
+                        
+                        <img src="http://t.wallpaperweb.org/wallpaper/nature/1280x720/vintagebridgewallpaper4201_1280x720.jpg" class="os-img">
+                        <img src="http://verdewall.com/wp-content/uploads/2016/08/Best-Wallpapers-9D8.jpg" class="os-img">
+                        <img src="http://webneel.com/wallpaper/sites/default/files/images/07-2013/6%20lamborghini%20car%20wallpaper.jpg" class="os-img">
+                        <img src="http://www.designbolts.com/wp-content/uploads/2013/02/Free-Tileable-High-Quality-Wood-Textures-Patterns-For-3D-Mapping.jpg" class="os-img">
+                        <img src="http://diarioveaonline.com/wp-content/uploads/2018/01/luxury-hd-desktop-wallpapers-for-windows-22.jpg" class="os-img">
+                        <img src="http://wallpaper-gallery.net/images/girly-computer-wallpapers/girly-computer-wallpapers-3.jpg" class="os-img">
+                        <img src="http://wallpaper-house.com/data/out/10/wallpaper2you_385631.jpg" class="os-img">
+                        <img src="http://flower-wallpaper.org/wp-content/uploads/2017/01/flower-patterns-wallpaper7.png" class="os-img">
+                    </div>
+                    <p>change label color</p>
+                    <div id="os-label-c">
+                        <div style="color:orange" class="os-label-c f">sololearn os</div>
+                        <div style="color:orange" class="os-label-c f bg-b">sololearn os</div>
+                        
+                        <div style="color:pink" class="os-label-c f">sololearn os</div>
+                        <div style="color:pink" class="os-label-c f bg-b">sololearn os</div>
+                        
+                        <div style="color:red" class="os-label-c f">sololearn os</div>
+                        <div style="color:red" class="os-label-c f bg-b">sololearn os</div>
+                        
+                        <div style="color:white" class="os-label-c f">sololearn os</div>
+                        <div style="color:white" class="os-label-c f bg-b">sololearn os</div>
+                        
+                        <div style="color:black" class="os-label-c f">sololearn os</div>
+                        <div style="color:black" class="os-label-c f bg-b">sololearn os</div>
+                        
+                        <div style="color:#41A4A4" class="os-label-c f">sololearn os</div>
+                        <div style="color:#41A4A4" class="os-label-c f bg-b">sololearn os</div>
+                    </div>
+                    <div id="set-dummy">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div id="os-cover">
+            <div id="os-cover-content">
+                <div class="os-enter">
+                    <i class="fa fa-arrow-circle-up"></i>
+                </div>
+            </div>
+        </div>
+        -->
+    </body>
+</html>
