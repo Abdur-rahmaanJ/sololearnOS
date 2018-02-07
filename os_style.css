@@ -1,0 +1,345 @@
+Ihtml, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+*
+{
+    text-align:center;
+    user-select:none;
+}
+html
+{
+    /*min-width:100%;*/
+    /*min-height:100%;*/
+}
+body
+{
+    background-color:#f5f5f5;
+    /*background-repeat:round;*/
+    /*min-width:100%;
+    min-height:100%;
+    position:relative;*/
+}
+#os-cover
+{
+     position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      background-color:green;
+      background-image:url('https://i.ytimg.com/vi/o8kT5c_4PAc/maxresdefault.jpg');
+}
+#os-cover-content
+{
+    position: relative;
+    width:100%;
+    height:250px;
+    margin-top:50px;
+    background-color:rgba(0,0,0,0.5);
+    text-align:center;
+    color:white;
+    padding-top:50px;
+}
+.os-enter
+{
+    
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:5px solid gray;
+    margin-left:40%;
+    margin-top:50px;
+    box-shadow: 0px 0px 10px 5px lightskyblue;
+    background-color:#41A4A4;
+    font-size:40px;
+}
+.os-enter:active
+{
+    background-color:orange;
+}
+#app-display
+{
+    margin-bottom:10px;
+}
+#buts > .b
+{
+    padding:5px;
+    width:40px;
+    height:25px;
+    line-height:30px;
+    margin:0px;
+    background: #d81b60;
+    color:white;
+    float:left;
+}
+#buts > .b:hover
+{
+    background-color:#f06292;
+}
+.b:first-child
+{
+    border-top-left-radius:5px;
+}
+.b:last-child
+{
+    border-top-right-radius:5px;
+}
+.foc
+{
+    
+    border-bottom:5px solid orange;
+    
+}
+.overlay
+{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+.overlay-content
+{
+    position: relative;
+    /*top: 25%;*/
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    color:white;
+}
+.c
+{
+    padding:0px;
+    margin:0px;
+}
+.b
+{
+    
+}
+#status-bar
+{
+    margin-bottom:20px;
+    text-align:right;
+    height:30px;
+    padding-top:20px;
+    /*border-bottom:3px solid black;*/
+}
+.s-i-r
+{
+    
+}
+.s-i-r > p 
+{
+    float:right;
+    background-color:orange;
+    color:white;
+    padding:5px;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    margin-left:5px;
+}
+.s-i-r > p > i
+{
+    line-height:25px;
+}
+.s-i-r > p:hover 
+{
+    background-color:green;
+}
+.app-close
+{
+    background-color:red;
+    color:white;
+    width:20px;
+    height:20px;
+    padding:5px;
+    float:right;
+}
+.app-close:hover
+{
+    background-color:green;
+}
+.app-title
+{
+    padding-top:5px;
+}
+.app-bar
+{
+    overflow:auto;
+    margin-bottom:10px;
+    box-shadow:3px 3px 10px gray;
+    background-color:#f5f5f5;
+}
+#app-now-icon
+{
+    width:30px;
+    height:30px;
+    float:left;
+    line-height:20px;
+}
+#app-now-icon > img
+{
+    width:100%;
+    height:100%;
+}
+.app-logo-outer
+{
+    display:inline-block;
+    margin:5px;
+    font-family: 'Raleway';
+    max-width:150px;
+    border-bottom:5px solid green;
+}
+.app-logo-outer > div > img
+{
+    border-radius:5px;
+}
+.app-logo
+{
+    width:50px;
+    height:50px;
+}
+.app-logo > img 
+{
+    width:100%;
+    height:100%;
+}
+.app-label
+{
+    background-color:rgba(255,255,255,0.5);
+    margin-top:5px;
+    padding-left:2px;
+    padding-right:2px;
+    
+}
+#app-holder
+{
+    background-color:#e1e2e1;
+    padding:10px;
+    border-radius:5px;
+    margin:10px;
+    box-shadow:5px 5px 10px gray;
+    font-family: 'Raleway';
+}
+#app-add-content
+{
+    height:400px;
+    overflow:scroll;
+}
+#app-add
+{
+    /*background-color:#c5cae9;*/
+    font-family: 'Raleway';
+    /*box-shadow:5px 5px 10px gray;*/
+}
+#app-add p
+{
+    margin-top:10px;
+}
+#app-add input
+{
+    width:300px;
+    padding:3px;
+    background:none;
+    background-color:rgba(255,255,255, 0.9);
+    outline:none;
+    border-radius:10px;
+    border:none;
+}
+#app-add textarea
+{
+    width:300px;
+    height:100px;
+    padding:5px;
+    background-color:black;
+    color:green;
+    text-align:left;
+    padding:5px;
+}
+#app-add button
+{
+    padding:5px;
+    border-radius:3px;
+    border:none;
+    width:100px;
+    height:50px;
+    line-height:45px;
+}
+#app-add button
+{
+    background-color:green;
+    color:white;
+}
+#app-add button:active
+{
+    background-color:orange;
+}
+.os-bg
+{
+    border:3px solid gray;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+}
+.os-img
+{
+    border:3px solid gray;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+}
+.os-label-c
+{
+    background-color:white;
+    padding:5px;
+    border-radius:3px;
+}
+#os-settings
+{
+    height:400px;
+    overflow:scroll;
+    font-family:Raleway;
+}
+#os-settings > p
+{
+    border:3px solid white;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+#set-dummy
+{
+    height:40px;
+}
+.disabled
+{
+    background-color:gray;
+}
+.bg-b
+{
+    background-color:black;
+}
+.f
+{
+    display:inline-block;
+}
