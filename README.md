@@ -1,2 +1,2 @@
 # sololearnOS
-An advanced os (recreation) software
+An advanced <i>Recreation</i> OS  software
