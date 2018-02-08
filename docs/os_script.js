@@ -285,7 +285,7 @@ $(function() {
     });
     $('.os-img').click(function(){
         $('body').css('background-image', 'url(' + $(this).attr('src') + ')' );
-        $('body').css('background-size', 'cover' );
+        //$('body').css('background-size', 'cover' );
     });
     $('.os-label-c').click(function(){
         $('body').css('color', $(this).css('color') );
