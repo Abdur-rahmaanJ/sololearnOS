@@ -3,7 +3,7 @@ v1.3.0 ready.\n\
 see the irc app. start chatting. see online users.my name is appinv. write name to notify\n\
 try changing the background in settings\n\
 option to install your own app added\n\
-feel free to propose apps to add.\n\
+feel free to propose apps.\n\
 you can customise stuffs under settings\n\
 you can sort apps according to category\n\
 see the comments in html section');
