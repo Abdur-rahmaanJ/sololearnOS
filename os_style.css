@@ -26,6 +26,19 @@ html
     /*min-width:100%;*/
     /*min-height:100%;*/
 }
+
+@media only screen and (min-width: 801px) {
+	body {
+    background-color:#f5f5f5;
+	min-height:100%;
+	min-width:100%;
+	background-size:cover;
+    /*background-repeat:round;*/
+    /*min-width:100%;
+    min-height:100%;
+    position:relative;*/
+}
+}
 body
 {
     background-color:#f5f5f5;
